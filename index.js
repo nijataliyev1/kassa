@@ -365,8 +365,11 @@ class Session {
 }
 
 let database = new Database();
-database.products.push(new Product("çÖrək",0.6,false));
-database.products.push(new Product("şəkər tozu",1.2,true));
+database.products.push(new Product("ÇÖRƏK",0.6,false));
+database.products.push(new Product("ŞƏKƏR TOZU",1.2,true));
+database.products.push(new Product("ALPEN GOLD",2.5,false));
+database.products.push(new Product("YUMURTA",0.2,false));
+database.products.push(new Product("UN",0.2,true));
 let cashier1 = new User();
 cashier1.username = "nijat";
 cashier1.pass = "1234";
