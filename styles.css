@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: peachpuff;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+form button {
+    margin: 10px;
+    width: 60px;
+    align-self: flex-end;
+}
+
+.checkout-page {
+    width: 100%;
+    min-height: 98vh;
+    padding: 10px;
+    display: flex;
+}
+
+.display-none {
+    display: none;
+}
+
+.operations {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: white;
+}
+
+.reset, .pay {
+    width: 70px;
+    font-size: 20px;
+    border-radius: 3px;
+    border: none;
+}
+
+th {
+    text-align: left;
+}
+
+.th-num {
+    width: 5%;
+}
+
+.th-name {
+    width: 40%;  
+    /* background-color: red; */
+}
+
+.th-amount,.th-price,.th-total {
+    width: 15%;
+    /* background-color: teal; */
+}
+
+.th-remove {
+    width: 10%;
+}
+
+.products {
+    margin: 20px 0;
+    width: calc(100% - 10px);
+    /* background-color: teal; */
+}
+
+td input {
+    width: 90%;
+}
+
+.reciept-outer {
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+
+}
+
+.reciept {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-family: 'Sometype Mono', monospace;
+    width: 300px;
+    padding: 40px 15px 20px;
+    font-size: 13px;
+    align-self: flex-start;
+}
+
+
+.reciept-table {
+    width: 100%;
+}
+
+.reciept-table th {
+    border-bottom: black solid 1px;
+}
+
+.reciept-table td, .reciept-table th {
+    line-height: 20px;
+}
+.reciept-table tfoot td {
+    border-top: black solid 1px;
+}
+
+.reciept-table {
+    border-collapse: collapse;
+
+}
+
+.payment table {
+    width: 100%;
+}
+
+.payment .value {
+    text-align: right;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay {
+    background-color: rgba(0, 128, 0, 0.349);
+}
+
+/* .reciept-table  */
+
+.pay-amount {
+    width: 50px;
+    border: none;
+}
+
+tfoot td {
+    height: 30px;
+}
+tfoot input {
+    border: none;
+    font-size: 16px;
+}
+
+tfoot input:focus {
+    outline: none;
+
+}
+
+.amount {
+    display: none;
+}
+
+.cancel-button {
+    background-color: rgb(248, 148, 148);
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    width: 62px;
+    height: 30px;
+    font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.market-data p {
+    display: flex;
+    justify-content: space-between;
+}
+

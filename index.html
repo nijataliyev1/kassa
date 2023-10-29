@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassa</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main>
+        <section class="checkout-page display-none">
+            <div class="operations">
+                <div class="buttons">
+                    <div>
+                        <button class="pay">Ödə</button>
+                        <button class="reset">Sıfırla</button>
+                    </div>
+                    <div>
+                        <label for="">Nağd</label>
+                        <input type="radio" name="payment-type" class="cash-pay">
+                        <label for="">Nağdsız</label>
+                        <input type="radio" name="payment-type" class="card-pay">
+                    </div>
+                </div>
+                <table class="products">
+                    <thead>
+                        <tr>
+                            <th class="th-num">№</th>
+                            <th class="th-name">Məhsulun adı</th>
+                            <th class="th-amount">Miqdar(say)</th>
+                            <th class="th-price">Qiymət</th>
+                            <th class="th-total">Məbləğ</th>
+                            <th class="th-remove"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td><input type = "text" placeholder="Məhsul adını daxil edin"></td>
+                            <td><input type = "number" class="amount"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="reciept-outer">
+                <div class="reciept">
+                    <h2>STAR MARKET</h2>
+                    <div class="market-data">
+                        <p>-----------------------------------</p>
+                        <p>Ünvan: Zirə qəsəbəsi Babayev küçəsi</p>
+                        <p class="cashier-name"><span>Kassir:</span> <span></span></p>
+                        <p class="date"><span>Tarix:</span> <span></span></p>
+                        <p class="id"><span>Qəbz ID:</span> <span></span></p>
+                        <p>-----------------------------------</p>
+                    </div>
+                    <table class="reciept-table">
+                        <thead>
+                            <tr>
+                                <th>Məhsul</th>
+                                <th>Miqdar(say)</th>
+                                <th>Qiymət</th>
+                                <th>Məbləğ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Yekun: </td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="payment">
+                        <p>************************************</p>
+                        <table>
+                            <tr>
+                                <td>Ödəniş üsulu:</td>
+                                <td class="value"></td>
+                            </tr>
+                            <tr>
+                                <td>Ödənildi:</td>
+                                <td class="value"></td>
+                            </tr>
+                            <tr>
+                                <td>Qalıq qaytarılan məbləğ:</td>
+                                <td class="value"></td>
+                            </tr>
+                            <tr>
+                                <td>Məbləğ:</td>
+                                <td class="value"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
